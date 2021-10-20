@@ -1,0 +1,21 @@
+package main
+	import (
+		"fmt"
+	"math/rand"
+		"sort" )
+type IntSlice []int
+
+func (p IntSlice) Len() int           { return len(p) }
+func (p IntSlice) Less(i, j int) bool { return p[i] < p[j] }
+func (p IntSlice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
+
+	func main() {
+		var num []int
+		for i := 0; i < 101; i++ {
+			num= append(num, rand.Int())
+
+		}
+		sort.Sort(IntSlice(num))
+		fmt.Println(num)
+	}//使用go库函数进行排序
+
