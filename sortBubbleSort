@@ -24,4 +24,4 @@ func main()  {
 		bubbleSort(num)
 		fmt.Println(num)
 
-	}//使用冒泡排序对随机数进行排序
+	}//使用冒泡排序对随机数进行排序1
